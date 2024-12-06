@@ -1,9 +1,10 @@
 import React from "react";
 import Logo from "./Logo";
+import linkedinLogo from '../../assets/icon-linkedin.png'
 
 const Header = () => {
   return (
-    <header className="flex justify-between max-w-7xl mx-auto py-6">
+    <header className="text-white flex justify-between max-w-7xl mx-auto py-6 items-center">
       <Logo />
 
       <nav className="flex gap-8">
@@ -24,9 +25,9 @@ const Header = () => {
         </button>
       </nav>
 
-      <button>
+      <button className="flex gap-2 items-center p-2">
         <p>Acessar Linkedin</p>
-        <img src="" alt="" />
+        <img src={linkedinLogo} alt="Logo Linkedin" />
       </button>
     </header>
   );
