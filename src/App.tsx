@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
 
-      <main className="text-white">
+      <main className="text-white lg:px-4">
         <StartSession />
       </main>
     </>
