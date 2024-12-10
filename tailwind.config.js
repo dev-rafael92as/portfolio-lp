@@ -5,7 +5,8 @@ export default {
         colors: {
             'main': '#0C1218',
             'white': '#FFFFFF',
-            'primaryBlue': '#3772FF'
+            'primaryBlue': '#3772FF',
+            'grayText': '#D7D7D7'
         },
         extend: {
             fontFamily: {

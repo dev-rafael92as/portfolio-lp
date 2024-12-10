@@ -3,3 +3,7 @@ export interface buttonIconProps {
     icon?: JSX.Element
     urlButton?: string
 }
+
+export interface flagContentProps {
+    flagContent: string
+}

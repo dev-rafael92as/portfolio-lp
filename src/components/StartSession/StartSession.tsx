@@ -5,16 +5,16 @@ import bgStartSession from '../../assets/bg-start-session.png'
 
 const StartSession = () => {
   return (
-    <section className="bg-cover" style={{backgroundImage: `url(${bgStartSession})`}}>
-      <div className="max-w-[1358px]  mx-auto py-32">
-        <p className="font-normal text-xl tracking-[.2em] text-[#D7D7D7] mb-4">
+    <section className="bg-cover lg:px-4" style={{backgroundImage: `url(${bgStartSession})`}}>
+      <div className="max-w-[1358px] mx-auto py-32">
+        <p className="font-normal text-xl tracking-[.2em] text-grayText mb-4">
           Bem vindo ao meu Portfólio
         </p>
         <h2 className="font-raleway font-bold text-7xl mb-1">Rafael Barros</h2>
         <p className="text-2xl mb-7">
           Desenvolvedor Web <span className="text-primaryBlue">Front-End</span>
         </p>
-        <p className="text-[#D7D7D7] text-xl font-normal mb-14">
+        <p className="text-grayText text-xl font-normal mb-14">
           Olá, sou um estudante de tecnologia e amante de descobertas e desafios,
           um eterno estudante e <span className="text-white">entusiasta da tecnologia e de resolver problemas
           reais.</span>

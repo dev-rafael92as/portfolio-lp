@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header";
+import HistorySession from "./components/HistorySession/HistorySession";
 import StartSession from "./components/StartSession/StartSession";
 
 function App() {
@@ -7,8 +8,10 @@ function App() {
     <>
       <Header />
 
-      <main className="text-white lg:px-4">
+      <main className="text-white">
         <StartSession />
+
+        <HistorySession />
       </main>
     </>
   )
