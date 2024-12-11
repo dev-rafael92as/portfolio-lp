@@ -1,7 +1,6 @@
-import React from 'react'
-import FlagContent from '../FlagContent/FlagContent'
-import IconDivider from '../IconDivider.tsx/IconDivider'
-import profilePhoto from '../../assets/profile-photo.png'
+import FlagContent from './FlagContent/FlagContent'
+import IconDivider from './IconDivider.tsx/IconDivider'
+import profilePhoto from '../assets/profile-photo.png'
 
 const HistorySession = () => {
   return (

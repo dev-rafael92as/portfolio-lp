@@ -1,7 +1,7 @@
-import ArrowButton from "../ButtonIcon/ArrowButton";
-import ButtonIcon from "../ButtonIcon/ButtonIcon";
-import ButtonText from "../ButtonText/ButtonText";
-import bgStartSession from '../../assets/bg-start-session.png'
+import ArrowButton from "./ButtonIcon/ArrowButton";
+import ButtonIcon from "./ButtonIcon/ButtonIcon";
+import ButtonText from "./ButtonText/ButtonText";
+import bgStartSession from '../assets/bg-start-session.png'
 
 const StartSession = () => {
   return (
