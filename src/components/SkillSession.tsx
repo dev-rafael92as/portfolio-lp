@@ -1,4 +1,6 @@
+import JSIcon from '../assets/JSIcon'
 import FlagContent from './FlagContent/FlagContent'
+import SkillCard from './SkillCard/SkillCard'
 
 const SkillSession = () => {
   return (
@@ -17,7 +19,7 @@ const SkillSession = () => {
         </div>
 
         <div className='flex max-w-[1359px] mx-auto pt-16 relative px-4'>
-            
+            <SkillCard cardText='Conhecimentos teóricos e pouca aplicação prática em projetos reais, mas constantemente melhorando.' cardTitle='Javascript' Icon={JSIcon} />
         </div>
     </section>
   )
