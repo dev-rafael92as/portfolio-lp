@@ -1,4 +1,7 @@
-import JSIcon from '../assets/JSIcon'
+import CSSIcon from '../assets/icons/CSSIcon'
+import HTMLIcon from '../assets/icons/HTMLIcon'
+import JSIcon from '../assets/icons/JSIcon'
+import ReactIcon from '../assets/icons/ReactIcon'
 import FlagContent from './FlagContent/FlagContent'
 import SkillCard from './SkillCard/SkillCard'
 
@@ -18,8 +21,11 @@ const SkillSession = () => {
             </div>
         </div>
 
-        <div className='flex max-w-[1359px] mx-auto pt-16 relative px-4'>
+        <div className='flex max-w-[1359px] mx-auto pt-16 relative px-4 justify-between w-full'>
             <SkillCard cardText='Conhecimentos teóricos e pouca aplicação prática em projetos reais, mas constantemente melhorando.' cardTitle='Javascript' Icon={JSIcon} />
+            <SkillCard cardText='Conhecimentos teóricos e pouca aplicação prática em projetos reais, mas constantemente melhorando.' cardTitle='React' Icon={ReactIcon} />
+            <SkillCard cardText='Conhecimentos teóricos e pouca aplicação prática em projetos reais, mas constantemente melhorando.' cardTitle='HTML' Icon={HTMLIcon} />
+            <SkillCard cardText='Conhecimentos teóricos e pouca aplicação prática em projetos reais, mas constantemente melhorando.' cardTitle='CSS' Icon={CSSIcon} />
         </div>
     </section>
   )
