@@ -1,4 +1,3 @@
-import React from 'react'
 import FlagContent from './FlagContent/FlagContent'
 import IconDivider from './IconDivider.tsx/IconDivider'
 import ProjectCard from './ProjectCard/ProjectCard'
@@ -17,7 +16,7 @@ const ProjectSession = () => {
         projectLink: '/'
     }
   return (
-    <section className='mt-48 max-w-[1359px] mx-auto'>
+    <section className='my-48 max-w-[1359px] mx-auto'>
         <div className='w-full justify-center flex mb-8'>
             <FlagContent flagContent='Projetos' />
         </div>
@@ -33,6 +32,8 @@ const ProjectSession = () => {
         </div>
 
         <div className='flex gap-[30px]'>
+            <ProjectCard {...projectMarkup} />
+            <ProjectCard {...projectMarkup} />
             <ProjectCard {...projectMarkup} />
         </div>
     </section>

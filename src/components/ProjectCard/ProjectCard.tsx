@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectTecIcon from '../ProjectTecIcon/ProjectTecIcon'
 import ButtonIcon from '../ButtonIcon/ButtonIcon'
 
@@ -29,7 +28,7 @@ const ProjectCard = ({projectTitle, projectDescription, projectImage, projectTec
             <h4 className='font-bold text-[22px] leading-[22px] mb-8'>{projectTitle}</h4>
             <p className='text-grayText font-[18px] leading-9'>{projectDescription}</p>
             <div className='flex w-full items-center justify-center mt-6'>
-                <ButtonIcon buttonContent='Acessar o Website' urlButton={projectLink}/>
+                <ButtonIcon classCss='rounded-md' buttonContent='Acessar o Website' urlButton={projectLink}/>
             </div>
         </a>
     </div>

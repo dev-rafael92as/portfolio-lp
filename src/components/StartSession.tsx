@@ -20,7 +20,9 @@ const StartSession = () => {
           reais.</span>
         </p>
         <div className="flex items-center gap-8">
-          <ButtonIcon buttonContent="Veja meu linkedin" icon={ArrowButton()} />
+          <div className="max-w-[232px]">
+            <ButtonIcon buttonContent="Veja meu linkedin" icon={ArrowButton()} />
+          </div>
           <ButtonText
             urlButton="https://github.com/dev-rafael92as"
             buttonContent="Acessar Github"
