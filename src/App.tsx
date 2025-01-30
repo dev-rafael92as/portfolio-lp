@@ -1,4 +1,5 @@
 import ContactSession from "./components/ContactSession";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HistorySession from "./components/HistorySession";
 import ProjectSession from "./components/ProjectSession";
@@ -25,6 +26,8 @@ function App() {
 
         <ContactSession />
       </main>
+
+      <Footer />
     </>
   )
 }

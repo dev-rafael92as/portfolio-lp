@@ -1,8 +1,6 @@
-import React from 'react'
-
 const Logo = () => {
   return (
-    <h1>Rafael Barros</h1>
+    <h1 className="font-raleway font-bold text-[29px] leading-[34px]">Rafael Barros</h1>
   )
 }
 

@@ -13,8 +13,8 @@ const ContactSession = () => {
         <FlagContent flagContent="Contato" />
       </div>
 
-      <div className="flex">
-        <div className="flex flex-col gap-9">
+      <div className="flex justify-between">
+        <div className="flex flex-col gap-9 max-w-[435px]">
           <p className="font-bold text-3xl leading-[45px]">
             Gostou do portfólio? Esses são meus contatos
           </p>
@@ -29,7 +29,7 @@ const ContactSession = () => {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-between items-start text-[22px] leading-[22px]">
+        <div className="flex flex-wrap items-start text-[22px] leading-[22px] max-w-[700px] gap-12">
           <ContactCard Icon={BsPhone} content="+55 (11) 99456-6523" title="Telefone" href="https://wa.me/5511994566523"/>
           <ContactCard Icon={FaLinkedinIn} content="linkedin/in/rafael92as/" title="Linkedin" href="www.linkedin.com/in/rafael92as"/>
           <ContactCard Icon={BsInstagram} content="Intagram" title="@rafiinha_barros" href="https://www.instagram.com/rafiinha_barros/"/>

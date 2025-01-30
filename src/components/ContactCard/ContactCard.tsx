@@ -3,7 +3,7 @@ import { ContactCardProps } from "../../utils/componentTypes"
 function ContactCard({Icon, title, content, href}: ContactCardProps) {
   return (
     <a href={href}>
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-3 items-end w-[276px]">
             <div className="border border-primaryBlue p-4 rounded-2xl">
                 <Icon />
             </div>
