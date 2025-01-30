@@ -4,7 +4,7 @@ import IconDivider from './IconDivider.tsx/IconDivider'
 
 const StudySession = () => {
   return (
-    <section className='my-48 max-w-[1359px] mx-auto'>
+    <section className='my-48 max-w-[1359px] mx-auto px-4'>
         <div className='w-full flex-col items-center justify-center flex max-w-[479px] mx-auto gap-8 mb-24'>
             <FlagContent flagContent='Estudos' />
 

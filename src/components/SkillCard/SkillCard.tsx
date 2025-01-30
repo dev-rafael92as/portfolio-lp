@@ -1,7 +1,7 @@
-import { skillCardProps } from '../../utils/componentTypes'
+import { SkillCardProps } from '../../utils/componentTypes'
 import IconDivider from '../IconDivider.tsx/IconDivider'
 
-const SkillCard = ({Icon, cardTitle, cardText}: skillCardProps) => {
+const SkillCard = ({Icon, cardTitle, cardText}: SkillCardProps) => {
   return (
     <div className='max-w-[296px]'>
         <div className='flex gap-5 items-center mb-5'>

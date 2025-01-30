@@ -16,7 +16,7 @@ const ProjectSession = () => {
         projectLink: '/'
     }
   return (
-    <section className='my-48 max-w-[1359px] mx-auto'>
+    <section className='my-48 max-w-[1359px] mx-auto px-4'>
         <div className='w-full justify-center flex mb-8'>
             <FlagContent flagContent='Projetos' />
         </div>

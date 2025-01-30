@@ -1,7 +1,7 @@
 import CheckIcon from '../../assets/icons/CheckIcon'
-import { studyCardProps } from '../../utils/componentTypes'
+import { StudyCardProps } from '../../utils/componentTypes'
 
-const StudyCard = ({title, description}: studyCardProps) => {
+const StudyCard = ({title, description}: StudyCardProps) => {
   return (
     <div className='flex flex-col items-center justify-center max-w-[374px]'>
         <div className='flex items-center justify-center p-6 border border-primaryBlue rounded-full w-fit mb-16'>

@@ -1,6 +1,6 @@
-import { buttonIconProps } from "../../utils/componentTypes"
+import { ButtonIconProps } from "../../utils/componentTypes"
 
-const ButtonIcon = ({icon, buttonContent, classCss}: buttonIconProps) => {
+const ButtonIcon = ({icon, buttonContent, classCss}: ButtonIconProps) => {
   return (
     <button className={`flex gap-2 w-full justify-center py-4 px-7 bg-primaryBlue text-white items-center hover:opacity-50 transition-opacity ${classCss}`}>
         {buttonContent}

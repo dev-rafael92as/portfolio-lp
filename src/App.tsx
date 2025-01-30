@@ -1,3 +1,4 @@
+import ContactSession from "./components/ContactSession";
 import Header from "./components/Header/Header";
 import HistorySession from "./components/HistorySession";
 import ProjectSession from "./components/ProjectSession";
@@ -21,6 +22,8 @@ function App() {
         <ProjectSession />
 
         <StudySession />
+
+        <ContactSession />
       </main>
     </>
   )
