@@ -3,7 +3,6 @@ import IconDivider from "./IconDivider.tsx/IconDivider";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import ProjectImage from "../assets/ImageProject.png";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
-import { isDesktop, isMobile } from "react-device-detect";
 
 const ProjectSession = () => {
 	const projectMarkup = {
@@ -14,7 +13,7 @@ const ProjectSession = () => {
 		projectLink: "/",
 	};
 	return (
-		<section className="my-48 max-w-[1359px] mx-auto px-4">
+		<section className="md:my-48 my-6 max-w-[1359px] mx-auto px-4">
 			<div className="w-full justify-center flex mb-8">
 				<FlagContent flagContent="Projetos" />
 			</div>
