@@ -7,7 +7,8 @@ export default {
     		main: '#0C1218',
     		white: '#FFFFFF',
     		primaryBlue: '#3772FF',
-    		grayText: '#D7D7D7'
+    		grayText: '#D7D7D7',
+			grayMenu: '#AEAEAE'
     	},
     	extend: {
     		fontFamily: {

@@ -9,11 +9,15 @@ import HamburguerMenu from "./HamburguerMenu";
 
 const Header = () => {
 	return (
-		<header className="text-white  border-b border-solid border-[#5E6266]">
-			<div className="flex justify-between max-w-7xl mx-auto py-6 items-center">
+		<header className="text-white  border-b border-solid border-[#1E2123]">
+			<div className="flex justify-between max-w-7xl mx-auto py-6 items-center px-4 md:px-0">
 				<Logo />
 
-				{isMobile && <HamburguerMenu />}
+				{isMobile && (
+					<div className="text-primaryBlue flex items-center justify-center">
+						<HamburguerMenu />
+					</div>
+				)}
 
 				{!isMobile && (
 					<>
