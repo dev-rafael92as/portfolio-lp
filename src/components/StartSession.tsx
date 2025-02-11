@@ -3,8 +3,11 @@ import ButtonIcon from "./ButtonIcon/ButtonIcon";
 import ButtonText from "./ButtonText/ButtonText";
 import bgStartSession from "../assets/bg-start-session.png";
 import { isDesktop } from "react-device-detect";
+import { useHygraphContext } from "@/context/useHygraph";
 
 const StartSession = () => {
+	const { home } = useHygraphContext();
+	console.log(home);
 	return (
 		<section
 			className="bg-cover lg:px-4"

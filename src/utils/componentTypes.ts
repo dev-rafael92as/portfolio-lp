@@ -26,3 +26,13 @@ export interface ContactCardProps {
     content: string
     href: string
 }
+
+export interface HygraphProps {
+    home: StartSession
+}
+
+interface StartSession {
+    descriptionStartSession: string
+    subtitleStartSession: string
+    titleStartSession: string
+}
