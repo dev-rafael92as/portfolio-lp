@@ -28,6 +28,8 @@ const startSession = `
     description {
       html
       text
+      markdown
+      raw
     }
     subTitle {
       html
