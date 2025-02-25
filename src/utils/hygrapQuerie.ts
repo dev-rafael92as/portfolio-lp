@@ -5,6 +5,7 @@ export const historySession = `
     description {
       html
       text
+      raw
     }
     initialDescription
     profileImage {
@@ -49,11 +50,13 @@ const projectSession = `
     text {
       html
       text
+      raw
     }
     myProject(orderBy: publishedAt_ASC) {
       description {
         html
         text
+        raw
       }
       image {
         url
@@ -70,6 +73,7 @@ const skillSession = `
     text {
       html
       text
+      raw
     }
     title
     knowTechnology(orderBy: publishedAt_ASC) {
@@ -78,6 +82,7 @@ const skillSession = `
       description {
         html
         text
+        raw
       }
     }
   }
@@ -92,6 +97,7 @@ const studySession = `
       description {
         html
         text
+        raw
       }
     }
   }

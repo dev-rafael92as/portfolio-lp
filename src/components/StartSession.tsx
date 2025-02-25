@@ -32,6 +32,10 @@ const StartSession = () => {
 				<div className="flex items-center gap-8">
 					<div className="max-w-[232px]">
 						<ButtonIcon
+							urlButton={
+								contactFields.find((item) => item.name === "Linkedin")
+									?.contactValue
+							}
 							buttonContent="Veja meu linkedin"
 							icon={ArrowButton()}
 						/>
