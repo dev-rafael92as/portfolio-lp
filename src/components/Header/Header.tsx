@@ -3,10 +3,6 @@ import Logo from "./Logo";
 import linkedinLogo from "../../assets/icon-linkedin.png";
 import HamburguerMenu from "./HamburguerMenu";
 
-// if (isMobile) return (
-//   <header></header>
-// )
-
 const Header = () => {
 	return (
 		<header className="text-white  border-b border-solid border-[#1E2123]">
