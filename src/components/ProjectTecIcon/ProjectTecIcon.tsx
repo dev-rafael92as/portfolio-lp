@@ -4,7 +4,7 @@ interface ProjectTecIconProps {
 
 const ProjectTecIcon = ({ techName }: ProjectTecIconProps) => {
 	return (
-		<div className="rounded-[100px] font-bold text-[14px] leading-[14px] border-[2px] py-[10px] px-[13px] border-primaryBlue">
+		<div className="rounded-[100px] font-bold text-[14px] leading-[14px] w-max border-[2px] py-[10px] px-[13px] border-primaryBlue">
 			{techName}
 		</div>
 	);

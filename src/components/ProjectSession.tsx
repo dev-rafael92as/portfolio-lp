@@ -1,32 +1,28 @@
 import FlagContent from "./FlagContent/FlagContent";
 import IconDivider from "./IconDivider.tsx/IconDivider";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import ProjectImage from "../assets/ImageProject.png";
+// import ProjectImage from "../assets/ImageProject.png";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import { useHygraphContext } from "@/context/useHygraph";
+import { RichText } from "./RichText/RichText";
 
 const ProjectSession = () => {
-	const projectMarkup = {
-		projectTitle: "Desafio - Front-End Mentor",
-		projectDescription: `Projetinho onde desenvolvi o layout de um card de preço, nele foi possível desenvolver de uma forma diferente, seguindo apenas a imagem e algumas instruções de estilização.`,
-		projectImage: ProjectImage,
-		projectTecs: ["Javascript", "HTML", "CSS"],
-		projectLink: "/",
-	};
+	const { home } = useHygraphContext();
+	const { projectSession } = home;
+	const { description, myProject, text, title } = projectSession;
+
 	return (
 		<section className="md:my-48 my-6 max-w-[1359px] mx-auto px-4">
 			<div className="w-full justify-center flex mb-8">
-				<FlagContent flagContent="Projetos" />
+				<FlagContent flagContent={title} />
 			</div>
 
 			<div className="flex flex-col gap-8 justify-center items-center mb-28">
 				<h3 className="text-[30px] max-w-[366px] flex w-full text-center font-epilogue font-bold leading-[45px]">
-					Conheça meus projetos mais recentes
+					{description}
 				</h3>
 				<p className="max-w-[839px] text-[18px] leading-9 text-center">
-					Esta seção estão <strong>alguns dos projetos</strong> que finalizei
-					recentemente e alguns que estão em processo de trabalho. Por aqui é
-					possível identificar por quais caminhos ando focando meus estudos e{" "}
-					<strong>práticas na programação</strong>.
+					<RichText content={text.raw} />
 				</p>
 				<IconDivider />
 			</div>
@@ -34,15 +30,19 @@ const ProjectSession = () => {
 			<div className="lg:flex lg:gap-[30px]">
 				<Carousel>
 					<CarouselContent>
-						<CarouselItem className="lg:basis-1/3">
-							<ProjectCard {...projectMarkup} />
-						</CarouselItem>
-						<CarouselItem className="lg:basis-1/3">
-							<ProjectCard {...projectMarkup} />
-						</CarouselItem>
-						<CarouselItem className="lg:basis-1/3">
-							<ProjectCard {...projectMarkup} />
-						</CarouselItem>
+						{myProject.map((project) => (
+							<CarouselItem className="lg:basis-1/3">
+								<ProjectCard
+									title={project.title}
+									description={
+										project.description.text || project.description.toString()
+									}
+									image={project.image.url}
+									url={project.url as string}
+									knowTechnology={project.knowTechnology}
+								/>
+							</CarouselItem>
+						))}
 					</CarouselContent>
 				</Carousel>
 			</div>

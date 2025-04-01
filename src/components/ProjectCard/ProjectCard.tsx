@@ -1,38 +1,58 @@
-import ProjectTecIcon from '../ProjectTecIcon/ProjectTecIcon'
-import ButtonIcon from '../ButtonIcon/ButtonIcon'
+import ProjectTecIcon from "../ProjectTecIcon/ProjectTecIcon";
+import ButtonIcon from "../ButtonIcon/ButtonIcon";
 
 export interface ProjectCardType {
-    projectTitle: string
-    projectDescription: string
-    projectImage: string
-    projectTecs?: string[]
-    projectLink: string
+	title: string;
+	description: string;
+	image: string;
+	knowTechnology?: TechName[];
+	url: string;
 }
 
-const ProjectCard = ({projectTitle, projectDescription, projectImage, projectTecs, projectLink}: ProjectCardType) => {
-  return (
-    <div className='max-w-[433px]'>
-        <a className='' href={projectLink}>
-            <div className='mb-8'>
-                <img src={projectImage} alt="" />
-            </div>
+type TechName = {
+	name: string;
+};
 
-            <div className='flex mb-8 gap-[10px]'>
-                {projectTecs?.map((techName) => {
-                    return (
-                        <ProjectTecIcon techName={techName} />
-                    )
-                })}
-            </div>
+const ProjectCard = ({
+	title,
+	description,
+	image,
+	knowTechnology,
+	url,
+}: ProjectCardType) => {
+	return (
+		<div className="max-w-[433px]">
+			<a className="" href={url}>
+				<div className="mb-8">
+					<img
+						src={image}
+						alt={title}
+						width={433}
+						height={322}
+						className="rounded-3xl max-h-[188px]"
+					/>
+				</div>
 
-            <h4 className='font-bold text-[22px] leading-[22px] mb-8'>{projectTitle}</h4>
-            <p className='text-grayText font-[18px] leading-9'>{projectDescription}</p>
-            <div className='flex w-full items-center justify-center mt-6'>
-                <ButtonIcon classCss='rounded-md' buttonContent='Acessar o Website' urlButton={projectLink}/>
-            </div>
-        </a>
-    </div>
-  )
-}
+				<div className="flex mb-8 gap-[10px] overflow-x-auto">
+					{knowTechnology?.map((techName) => {
+						return <ProjectTecIcon techName={techName.name} />;
+					})}
+				</div>
 
-export default ProjectCard
+				<h4 className="font-bold text-[22px] leading-[22px] mb-8">{title}</h4>
+				<p className="text-grayText font-[18px] leading-9 h-[144px]">
+					{description}
+				</p>
+				<div className="flex w-full items-center justify-center mt-6">
+					<ButtonIcon
+						classCss="rounded-md"
+						buttonContent="Acessar o Website"
+						urlButton={url}
+					/>
+				</div>
+			</a>
+		</div>
+	);
+};
+
+export default ProjectCard;

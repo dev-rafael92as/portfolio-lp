@@ -55,6 +55,7 @@ type Project = {
 	description: Description;
 	image: Image;
 	url: string | null;
+	knowTechnology: Technology[]
 };
 
 type Technology = {

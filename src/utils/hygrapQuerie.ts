@@ -63,6 +63,9 @@ const projectSession = `
       }
       title
       url
+      knowTechnology(first: 10) {
+        name
+      }
     }
   }
 `
