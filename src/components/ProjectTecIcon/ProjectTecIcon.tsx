@@ -4,8 +4,10 @@ interface ProjectTecIconProps {
 
 const ProjectTecIcon = ({ techName }: ProjectTecIconProps) => {
 	return (
-		<div className="rounded-[100px] font-bold text-[14px] leading-[14px] w-max border-[2px] py-[10px] px-[13px] border-primaryBlue">
-			{techName}
+		<div className="rounded-[100px] border-[2px] py-[10px] px-[13px] border-primaryBlue flex">
+			<span className="font-bold text-[11px] leading-[14px] w-max">
+				{techName}
+			</span>
 		</div>
 	);
 };

@@ -33,7 +33,7 @@ const ProjectCard = ({
 					/>
 				</div>
 
-				<div className="flex mb-8 gap-[10px] overflow-x-auto">
+				<div className="flex mb-8 gap-[10px] flex-wrap">
 					{knowTechnology?.map((techName) => {
 						return <ProjectTecIcon techName={techName.name} />;
 					})}
