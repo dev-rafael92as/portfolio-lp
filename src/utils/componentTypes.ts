@@ -17,7 +17,7 @@ export interface SkillCardProps {
 
 export interface StudyCardProps {
 	title: string;
-	description: string;
+	description: Description;
 }
 
 export interface ContactCardProps {
@@ -102,8 +102,16 @@ type ProfileData = {
 	historySession: HistorySession;
 	contactSession: ContactSession;
 	projectSession: ProjectSession;
+	studySession: StudySession;
 	skillSession: SkillSession;
 };
+
+type StudySession = {
+	title: string;
+	description: string;
+	text: Description;
+	knowTechnology: Technology[];
+}
 
 type TextNode = {
 	text: string;
