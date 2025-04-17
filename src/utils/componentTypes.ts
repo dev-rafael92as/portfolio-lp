@@ -21,10 +21,11 @@ export interface StudyCardProps {
 }
 
 export interface ContactCardProps {
-	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+	Icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 	title: string;
 	content: string;
 	href: string;
+	svgIcon?: string
 }
 
 export interface HygraphProps {
@@ -44,6 +45,7 @@ type ContactField = {
 	name: string;
 	contactValue: string;
 	svgIcon?: string;
+	contentValue: string;
 };
 
 type Image = {
@@ -81,6 +83,9 @@ type HistorySession = {
 
 type ContactSession = {
 	contactFields: ContactField[];
+	title: string;
+	text: Description;
+	description: string;
 };
 
 type ProjectSession = {

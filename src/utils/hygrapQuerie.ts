@@ -17,10 +17,16 @@ export const historySession = `
 const contactSession = `
   contactSession {
     contactFields {
+      contentValue
       contactValue
       name
       svgIcon
+      }
+    text {
+      raw
     }
+    title
+    description
   }
 `
 
