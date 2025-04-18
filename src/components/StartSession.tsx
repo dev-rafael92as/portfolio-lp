@@ -10,7 +10,6 @@ const StartSession = () => {
 	const { home } = useHygraphContext();
 	const { startSession } = home;
 	const { titleStart, subTitle, description, contactFields } = startSession;
-	console.log({ startSession });
 	return (
 		<section
 			className="bg-cover lg:px-4"
@@ -26,9 +25,9 @@ const StartSession = () => {
 				<p className="md:text-2xl text-[16px] leading-4 md:mb-7 mb-4">
 					{subTitle.text}
 				</p>
-				<p className="text-grayText md:text-xl text-xs leading-9 font-normal md:mb-14 mb-11">
+				<div className="text-grayText md:text-xl text-xs leading-9 font-normal md:mb-14 mb-11">
 					<RichText content={description.raw}></RichText>
-				</p>
+				</div>
 				<div className="flex items-center gap-8">
 					<div className="max-w-[232px]">
 						<ButtonIcon

@@ -25,9 +25,9 @@ const HistorySession = () => {
 					{initialDescription}
 				</h4>
 
-				<p className="text-base text-grayText mb-8 leading-10">
+				<div className="text-base text-grayText mb-8 leading-10">
 					<RichText content={description.raw} />
-				</p>
+				</div>
 				<IconDivider />
 			</div>
 		</section>

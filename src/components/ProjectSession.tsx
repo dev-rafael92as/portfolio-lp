@@ -21,9 +21,9 @@ const ProjectSession = () => {
 				<h3 className="text-[30px] max-w-[366px] flex w-full text-center font-epilogue font-bold leading-[45px]">
 					{description}
 				</h3>
-				<p className="max-w-[839px] text-[18px] leading-9 text-center">
+				<div className="max-w-[839px] text-[18px] leading-9 text-center">
 					<RichText content={text.raw} />
-				</p>
+				</div>
 				<IconDivider />
 			</div>
 
@@ -31,7 +31,7 @@ const ProjectSession = () => {
 				<Carousel>
 					<CarouselContent>
 						{myProject.map((project) => (
-							<CarouselItem className="lg:basis-1/3">
+							<CarouselItem className="lg:basis-1/3" key={project.title}>
 								<ProjectCard
 									title={project.title}
 									description={

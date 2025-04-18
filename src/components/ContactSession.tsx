@@ -2,9 +2,6 @@ import { useHygraphContext } from "@/context/useHygraph";
 import ContactCard from "./ContactCard/ContactCard";
 import FlagContent from "./FlagContent/FlagContent";
 import IconDivider from "./IconDivider.tsx/IconDivider";
-import { BsInstagram } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
 const ContactSession = () => {
@@ -20,9 +17,9 @@ const ContactSession = () => {
 			<div className="flex lg:flex-row md:gap-0 gap-9 flex-col justify-between">
 				<div className="flex flex-col gap-9 max-w-[435px]">
 					<p className="font-bold text-3xl leading-[45px]">{description}</p>
-					<p className="text-[18px] leading-9">
+					<div className="text-[18px] leading-9">
 						<RichText content={text.raw} />
-					</p>
+					</div>
 					<div className="md:block hidden">
 						<IconDivider />
 					</div>
@@ -32,9 +29,9 @@ const ContactSession = () => {
 					{contactFields.map(
 						({ contactValue, name, svgIcon, contentValue }) => {
 							if (name == "Github") return;
-							console.log(contentValue);
 							return (
 								<ContactCard
+									key={name}
 									svgIcon={svgIcon}
 									content={contentValue}
 									title={name}

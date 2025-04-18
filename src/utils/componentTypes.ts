@@ -10,9 +10,10 @@ export interface FlagContentProps {
 }
 
 export interface SkillCardProps {
-	Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+	Icon?: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 	cardTitle: string;
 	cardText: string;
+	svgIcon?: string;
 }
 
 export interface StudyCardProps {

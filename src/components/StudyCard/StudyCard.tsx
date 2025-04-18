@@ -12,9 +12,9 @@ const StudyCard = ({ title, description }: StudyCardProps) => {
 			<p className="text-[22px] leading-[22px] font-bold md:mb-1 mb-5">
 				{title}
 			</p>
-			<p className="text-base leading-9 text-grayText text-center">
+			<div className="text-base leading-9 text-grayText text-center">
 				<RichText content={description.raw}></RichText>
-			</p>
+			</div>
 		</div>
 	);
 };

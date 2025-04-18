@@ -22,7 +22,7 @@ const StudySession = () => {
 				<Carousel>
 					<CarouselContent>
 						{knowTechnology.map((tech) => (
-							<CarouselItem className="lg:basis-1/3">
+							<CarouselItem className="lg:basis-1/3" key={tech.name}>
 								<StudyCard title={tech.name} description={tech.description} />
 							</CarouselItem>
 						))}
